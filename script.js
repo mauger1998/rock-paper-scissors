@@ -1,5 +1,8 @@
+//Set scores to zero//
 let playerScore = 0;
 let compScore = 0;
+
+//Make function that picks a random number and assigns it to either rock, paper or scissors//
 
 let  getComputerChoice = () => {
     
@@ -17,6 +20,8 @@ let  getComputerChoice = () => {
     
 }
 
+
+//Make function that plays the game for one round//
 
 
 const playRound = (playerSelection, computerSelection) => {
@@ -60,6 +65,8 @@ const playRound = (playerSelection, computerSelection) => {
     }
 }
 
+//Make function which loops the playRound function//
+
 let game = () => {
     for (i = 0; i < 5; i++) {
         console.log(playRound(playerSelection = prompt(), computerSelection = getComputerChoice()));
@@ -72,8 +79,15 @@ let game = () => {
 
 
 
-
+//Run code and prnt final score//
 
 game();
+if (playerScore > compScore) {
+    console.log("You Win!");
+} else if (playerScore < compScore) {
+    console.log("You Loose!");
+} else {
+    console.log("It's a tie!");
+}
 console.log(`Final Score = Player: ${playerScore}, Computer ${compScore}`);
 
