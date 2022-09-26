@@ -1,3 +1,6 @@
+let playerScore = 0;
+let compScore = 0;
+
 let  getComputerChoice = () => {
     
     let computerChoice = Math.random();
@@ -19,37 +22,46 @@ let  getComputerChoice = () => {
 const playRound = (playerSelection, computerSelection) => {
     playerSelection = playerSelection.toLowerCase();
     if (playerSelection === "rock" && computerSelection === "rock"){
-        return "you tied you both picked rock";
+        return "you tied";
 
     } else if (playerSelection === "paper" && computerSelection === "paper"){
-        return "you tied you both picked paper";
+        return "you tied";
 
     } else if (playerSelection === "scissors" && computerSelection === "scissors"){
-        return "you tied you both picked scissors";
+        return "you tied";
 
     } else if (playerSelection === "scissors" && computerSelection === "rock") {
-        return "you lost rock beats scissors";
+        return "you lost";
 
     } else if (playerSelection === "scissors" && computerSelection === "paper"){
-        return "you won scissors beats paper";
+        return "you won";
 
     } else if (playerSelection === "rock" && computerSelection === "paper") { 
-        return "you lost paper beats rock";
+        return "you lost";
 
     } else if (playerSelection === "rock" && computerSelection === "scissors") { 
-        return "you won rock beats scissors";
+        return "you won";
 
     } else if (playerSelection === "paper" && computerSelection === "scissors") { 
-        return "you lost scissors beats paper";
+        return "you lost";
           
     } else if (playerSelection === "paper" && computerSelection === "rock") { 
-        return "you won paper beats rock";
+        return "you won";
     }
 }
 
-const playerSelection = prompt("Pick");
-const computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection));
+let game = () => {
+    for (i = 0; i < 5; i++) {
+        console.log(playRound(playerSelection = prompt(), computerSelection = getComputerChoice()));
+    }
+}
+    
+
+        
 
 
+
+
+
+game();
 
