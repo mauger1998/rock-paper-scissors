@@ -34,18 +34,28 @@ const playRound = (playerSelection, computerSelection) => {
         return "you lost";
 
     } else if (playerSelection === "scissors" && computerSelection === "paper"){
+        ++playerScore;
+        console.log(`Player: ${playerScore}, Computer: ${compScore}`);
         return "you won";
 
-    } else if (playerSelection === "rock" && computerSelection === "paper") { 
+    } else if (playerSelection === "rock" && computerSelection === "paper") {
+        ++compScore;
+        console.log(`Player: ${playerScore}, Computer: ${compScore}`);
         return "you lost";
 
-    } else if (playerSelection === "rock" && computerSelection === "scissors") { 
+    } else if (playerSelection === "rock" && computerSelection === "scissors") {
+        ++playerScore;
+        console.log(`Player: ${playerScore}, Computer: ${compScore}`); 
         return "you won";
 
     } else if (playerSelection === "paper" && computerSelection === "scissors") { 
+        ++compScore;
+        console.log(`Player: ${playerScore}, Computer: ${compScore}`);
         return "you lost";
           
-    } else if (playerSelection === "paper" && computerSelection === "rock") { 
+    } else if (playerSelection === "paper" && computerSelection === "rock") {
+        ++playerScore;
+        console.log(`Player: ${playerScore}, Computer: ${compScore}`) 
         return "you won";
     }
 }
