@@ -55,7 +55,7 @@ const playRound = (playerSelection, computerSelection) => {
           
     } else if (playerSelection === "paper" && computerSelection === "rock") {
         ++playerScore;
-        console.log(`Player: ${playerScore}, Computer: ${compScore}`) 
+        console.log(`Player: ${playerScore}, Computer: ${compScore}`); 
         return "you won";
     }
 }
@@ -63,6 +63,7 @@ const playRound = (playerSelection, computerSelection) => {
 let game = () => {
     for (i = 0; i < 5; i++) {
         console.log(playRound(playerSelection = prompt(), computerSelection = getComputerChoice()));
+        
     }
 }
     
@@ -74,4 +75,5 @@ let game = () => {
 
 
 game();
+console.log(`Final Score = Player: ${playerScore}, Computer ${compScore}`);
 
