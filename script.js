@@ -73,6 +73,7 @@ const playRound = (playerSelection, computerSelection) => {
     } else if (playerSelection === "scissors" && computerSelection === "paper"){
         ++playerScore;
         let res = (`you won, scissors beats paper, Player: ${playerScore}, Computer: ${compScore}`);
+        results.textContent = res;
         return res;
 
     } else if (playerSelection === "rock" && computerSelection === "paper") {
