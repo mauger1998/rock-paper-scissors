@@ -53,3 +53,12 @@ body {
     background-color:transparent;
     box-shadow:none;
     
+    
+}
+.scissors > img {
+    width:150px;
+    position: absolute;
+    filter: drop-shadow(10px 10px 20px white);
+    top:30vh;
+    
+}
