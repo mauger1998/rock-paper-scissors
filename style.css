@@ -44,3 +44,12 @@ body {
     font-family: 'Dancing Script', cursive;
     color: black;
 }
+.rock {
+    font-family: 'Noto Sans Mono', monospace;
+
+}
+.scissors {
+    font-family: 'Noto Sans Mono', monospace;
+    background-color:transparent;
+    box-shadow:none;
+}
