@@ -69,7 +69,7 @@ const playRound = (playerSelection, computerSelection) => {
 
 let game = () => {
     for (i = 0; i < 1; i++) {
-        console.log(playRound(playerSelection = prompt(), computerSelection = getComputerChoice()));
+        console.log(playRound(playerSelection = promp(), computerSelection = getComputerChoice()));
         
     }
 }
