@@ -68,7 +68,7 @@ const playRound = (playerSelection, computerSelection) => {
 //Make function which loops the playRound function//
 
 let game = () => {
-    for (i = 0; i < 5; i++) {
+    for (i = 0; i < 1; i++) {
         console.log(playRound(playerSelection = prompt(), computerSelection = getComputerChoice()));
         
     }
