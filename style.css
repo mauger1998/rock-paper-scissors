@@ -21,9 +21,9 @@ body {
     border:1px solid red;
     height:50vh;
     display:flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items:center;
-    gap: 50px;
+    
 }
 
 .btn {
@@ -57,8 +57,8 @@ body {
 }
 .scissors > img {
     width:150px;
-    position: absolute;
+    position: relative;
     filter: drop-shadow(10px 10px 20px white);
-    top:30vh;
+    
     
 }
