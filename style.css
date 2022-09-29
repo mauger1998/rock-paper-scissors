@@ -3,3 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-image:linear-gradient(rgba(42, 47, 202, 0.822), rgba(126, 130, 150, 0.7));
+    background-repeat: no-repeat;
+    height:100vh;
+}
