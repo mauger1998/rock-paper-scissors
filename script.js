@@ -6,18 +6,34 @@ const sciss = document.getElementById("scissors");
 const results = document.querySelector("div");
 
 rok.addEventListener("click", (e) => {
-    console.log(playRound("rock", getComputerChoice()));
+    if (playerScore + compScore == 5) {
+        results.textContent = "Game Over"
+    } else {
+        playRound("rock", getComputerChoice());
+    }
+    
+    
     
 });
 
 pape.addEventListener("click", (e) => {
-    console.log(playRound("paper", getComputerChoice()))
+    if (playerScore + compScore == 5) {
+        results.textContent = "Game Over"
+    } else {
+        playRound("paper", getComputerChoice());
+    }
 
 });
 
 sciss.addEventListener("click", (e) => {
-    console.log(playRound("scissors", getComputerChoice()))
+    if (playerScore + compScore == 5) {
+        results.textContent = "Game Over"
+    } else {
+        playRound("scissors", getComputerChoice());
+    }
 });
+
+
 
 
 
@@ -102,6 +118,8 @@ const playRound = (playerSelection, computerSelection) => {
     }
 }
 
+
+
 //Make function which loops the playRound function//
 
 let game = () => {
@@ -127,6 +145,8 @@ if (playerScore > compScore) {
     console.log("It's a tie!");
 }
 console.log(`Final Score = Player: ${playerScore}, Computer ${compScore}`);*/
+
+
 
 
 
