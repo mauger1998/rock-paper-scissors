@@ -69,7 +69,7 @@ const playRound = (playerSelection, computerSelection) => {
 
 let game = () => {
     for (i = 0; i < 1; i++) {
-        console.log(playRound(playerSelection = promp(), computerSelection = getComputerChoice()));
+        console.log(playRound(playerSelection , computerSelection = getComputerChoice()));
         
     }
 }
@@ -90,4 +90,10 @@ if (playerScore > compScore) {
     console.log("It's a tie!");
 }
 console.log(`Final Score = Player: ${playerScore}, Computer ${compScore}`);
+
+/* UI Event Listeners */
+
+const rock = document.getElementById(rock);
+const paper = document.getElementById(paper);
+const scissors = document.getElementById(scissors);
 
