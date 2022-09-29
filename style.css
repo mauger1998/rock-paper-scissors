@@ -67,5 +67,8 @@ body {
     height:10vh;
     width:100vw;
     font-family: 'Noto Sans Mono', monospace;
-    color:black;
+    color:white;
+    background-color:transparent;
+    text-align:center;
+
 }
