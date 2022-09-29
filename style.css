@@ -29,4 +29,9 @@ body {
 .btn {
     padding:80px 80px;
     border-radius:100%;
+    background-color:grey;
+    outline:none;
+    border:none;
+    font-size:25px;
+    color:white;
 }
