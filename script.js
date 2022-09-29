@@ -6,8 +6,10 @@ const sciss = document.getElementById("scissors");
 const results = document.querySelector("div");
 
 rok.addEventListener("click", (e) => {
-    if (playerScore + compScore == 5) {
-        results.textContent = "Game Over"
+    if (playerScore + compScore == 5 && playerScore > compScore) {
+        results.textContent = "Game Over, Player Wins"
+    } else if (playerScore + compScore == 5 && playerScore < compScore) {
+        results.textContent = "Game Over, Computer Wins"
     } else {
         playRound("rock", getComputerChoice());
     }
@@ -17,20 +19,25 @@ rok.addEventListener("click", (e) => {
 });
 
 pape.addEventListener("click", (e) => {
-    if (playerScore + compScore == 5) {
-        results.textContent = "Game Over"
+    if (playerScore + compScore == 5 && playerScore > compScore) {
+        results.textContent = "Game Over, Player Wins"
+    } else if (playerScore + compScore == 5 && playerScore < compScore) {
+        results.textContent = "Game Over, Computer Wins"
     } else {
         playRound("paper", getComputerChoice());
     }
-
+    
 });
 
 sciss.addEventListener("click", (e) => {
-    if (playerScore + compScore == 5) {
-        results.textContent = "Game Over"
+    if (playerScore + compScore == 5 && playerScore > compScore) {
+        results.textContent = "Game Over, Player Wins"
+    } else if (playerScore + compScore == 5 && playerScore < compScore) {
+        results.textContent = "Game Over, Computer Wins"
     } else {
         playRound("scissors", getComputerChoice());
     }
+    
 });
 
 
