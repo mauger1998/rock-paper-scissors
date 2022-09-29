@@ -1,3 +1,15 @@
+/* UI Event Listeners */
+
+const rok = document.getElementById("rock");
+const pape = document.getElementById("paper");
+const sciss = document.getElementById("scissors");
+
+rok.addEventListener("click", (e) => {
+    console.log(playRound("rock", getComputerChoice()));
+})
+
+
+
 //Set scores to zero//
 let playerScore = 0;
 let compScore = 0;
@@ -27,13 +39,13 @@ let  getComputerChoice = () => {
 const playRound = (playerSelection, computerSelection) => {
     playerSelection = playerSelection.toLowerCase();
     if (playerSelection === "rock" && computerSelection === "rock"){
-        return "you tied";
+        return "you tied, you both picked rock";
 
     } else if (playerSelection === "paper" && computerSelection === "paper"){
-        return "you tied";
+        return "you tied, you both picked rock";
 
     } else if (playerSelection === "scissors" && computerSelection === "scissors"){
-        return "you tied";
+        return "you tied, you both picked rock";
 
     } else if (playerSelection === "scissors" && computerSelection === "rock") {
         return "you lost";
@@ -69,7 +81,7 @@ const playRound = (playerSelection, computerSelection) => {
 
 let game = () => {
     for (i = 0; i < 1; i++) {
-        console.log(playRound(playerSelection , computerSelection = getComputerChoice()));
+        console.log(playRound(playerSelection = prompt(), computerSelection = getComputerChoice()));
         
     }
 }
@@ -81,7 +93,7 @@ let game = () => {
 
 //Run code and prnt final score//
 
-game();
+/*game();
 if (playerScore > compScore) {
     console.log("You Win!");
 } else if (playerScore < compScore) {
@@ -89,11 +101,7 @@ if (playerScore > compScore) {
 } else {
     console.log("It's a tie!");
 }
-console.log(`Final Score = Player: ${playerScore}, Computer ${compScore}`);
+console.log(`Final Score = Player: ${playerScore}, Computer ${compScore}`);*/
 
-/* UI Event Listeners */
 
-const rock = document.getElementById(rock);
-const paper = document.getElementById(paper);
-const scissors = document.getElementById(scissors);
 
