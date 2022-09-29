@@ -6,7 +6,16 @@ const sciss = document.getElementById("scissors");
 
 rok.addEventListener("click", (e) => {
     console.log(playRound("rock", getComputerChoice()));
-})
+});
+
+pape.addEventListener("click", (e) => {
+    console.log(playRound("paper", getComputerChoice()))
+
+});
+
+sciss.addEventListener("click", (e) => {
+    console.log(playRound("scissors", getComputerChoice()))
+});
 
 
 
@@ -48,32 +57,34 @@ const playRound = (playerSelection, computerSelection) => {
         return "you tied, you both picked rock";
 
     } else if (playerSelection === "scissors" && computerSelection === "rock") {
-        return "you lost";
+        ++compScore;
+        console.log(`Player: ${playerScore}, Computer: ${compScore}`);
+        return "you lost, rock beats scissors";
 
     } else if (playerSelection === "scissors" && computerSelection === "paper"){
         ++playerScore;
         console.log(`Player: ${playerScore}, Computer: ${compScore}`);
-        return "you won";
+        return "you won, scissors beats paper";
 
     } else if (playerSelection === "rock" && computerSelection === "paper") {
         ++compScore;
         console.log(`Player: ${playerScore}, Computer: ${compScore}`);
-        return "you lost";
+        return "you lost, paper beats rock";
 
     } else if (playerSelection === "rock" && computerSelection === "scissors") {
         ++playerScore;
         console.log(`Player: ${playerScore}, Computer: ${compScore}`); 
-        return "you won";
+        return "you won, rock beats scissors";
 
     } else if (playerSelection === "paper" && computerSelection === "scissors") { 
         ++compScore;
         console.log(`Player: ${playerScore}, Computer: ${compScore}`);
-        return "you lost";
+        return "you lost, scissors beats paper";
           
     } else if (playerSelection === "paper" && computerSelection === "rock") {
         ++playerScore;
         console.log(`Player: ${playerScore}, Computer: ${compScore}`); 
-        return "you won";
+        return "you won, paper beats rock";
     }
 }
 
