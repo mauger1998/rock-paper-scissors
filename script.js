@@ -3,6 +3,7 @@
 const rok = document.getElementById("rock");
 const pape = document.getElementById("paper");
 const sciss = document.getElementById("scissors");
+const results = document.getElementById("results");
 
 rok.addEventListener("click", (e) => {
     console.log(playRound("rock", getComputerChoice()));

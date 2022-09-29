@@ -62,3 +62,8 @@ body {
     
     
 }
+#results {
+    background-color:white;
+    height:10vh;
+    width:100vw;
+}
