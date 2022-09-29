@@ -16,3 +16,15 @@ body {
 #title {
     text-align:center;
 }
+
+.play {
+    border:1px solid red;
+    height:50vh;
+    display:flex;
+    justify-content: center;
+    align-items:center
+}
+
+.btn {
+    padding:20px 40px;
+}
